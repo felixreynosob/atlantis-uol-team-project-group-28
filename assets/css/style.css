@@ -1,0 +1,194 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+/*REUSABLE COMPONENTS*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/*******   HEADINGS   *******/
+/* -----HEADINGS------ */
+
+h1,
+h2,
+h3 {
+    
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+h1 {
+    margin: 0;
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 3px;
+}
+
+
+h2 {
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    width: 100px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+
+/********/
+/*HEADER*/
+/********/
+
+nav {
+    height: 120px;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+
+nav ul, li, p {
+    display: inline-block;
+}
+
+nav li {
+    margin-left: 40px;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 65px;
+    list-style: none;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #a110c3;   
+}
+ 
+#slideshow-container {
+    height: 100vh;
+    background-size: cover;
+}
+
+.hero-text-box {
+    width: 100%;
+    text-align: center;
+    margin-top:250px;
+}
+.hero-text-box h1 {
+    font-weight: 400;
+} 
+
+.hero-btn:link,
+.hero-btn:visited {
+    background-color: #8510c3;
+    border-radius: 200px;
+    padding: 15px 60px;
+    text-decoration: none;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s; 
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+    background-color: #a110c3;
+}
+
+/**************SLIDESHOW**************/
+
+.slideshow-container {
+/*  max-width: 1000px;*/
+    height: 100vh;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
